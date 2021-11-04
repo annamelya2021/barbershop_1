@@ -344,6 +344,7 @@ button {
 
 .contact-us {
   background-color: #191c26;
+  position: relative;
 }
 
 .masters-socials-icon {
@@ -358,6 +359,19 @@ button {
 }
 .contact-us-block {
   width: 50%;
+}
+
+.contact-us-block:last-child {
+  padding-left: 100px;
+}
+
+.contact-us-block-bg {
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/contact-us-bg.png);
 }
 
 .booking-form {
@@ -386,10 +400,14 @@ button {
   height: 1px;
   background: var(--color-white);
 }
+.booking-form-control:focus-within::before {
+  background-color: white;
+}
 
 .booking-form-control-wide {
   width: 100%;
 }
+
 .booking-form-input {
   width: 100%;
   background-color: transparent;
@@ -407,10 +425,93 @@ button {
   color: var(--color-white);
 }
 
+.booking-form-input:focus::placeholder {
+  color: white;
+}
+
 .booking-form-textarea {
   resize: none;
   height: 76px;
 }
 .booking-form-input:last-child {
   margin-right: 0;
+}
+
+.contacts-list-item {
+  margin-left: 35px;
+}
+
+.contacts-list-item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contacts-list-item.address::before,
+.contacts-list-item.phone::before,
+.contacts-list-item.mail::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: -35px;
+}
+
+.contacts-list-item.address::before {
+  background-image: url("../images/map-pin.svg");
+}
+
+.contacts-list-item.phone::before {
+  background-image: url("../images/phone.svg");
+}
+
+.contacts-list-item.mail::before {
+  background-image: url("../images/mail.svg");
+}
+
+.contacts-list-link {
+  color: #9da4bd;
+}
+
+.contacts-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.work-hours {
+  margin-top: 70px;
+}
+.work-hours-title {
+  color: white;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.work-hours-title::before {
+  background-color: rgba(157, 164, 189, 0.4);
+}
+
+.work-hours-description {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
 }

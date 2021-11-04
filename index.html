@@ -285,10 +285,10 @@
         <form class="booking-form">
           <div class="booking-form-row">
             <label class="booking-form-control" for="">
-            <input  class="booking-form-input" type="text" placeholder="Имя*" name="firstname" id="" required>
+            <input  class="booking-form-input" type="text" placeholder="Имя*" name="firstname" id="" required autocomplete=" off">
             </label>
             <label class="booking-form-control " for="">
-            <input class="booking-form-input"  type="tel" placeholder="Телефон*" name="telephone" id="" required>
+            <input class="booking-form-input"  type="tel" placeholder="Телефон*" name="telephone" id="" required autocomplete=" off">
             </label>
           </div>
           <div class="booking-form-row">
@@ -299,8 +299,9 @@
           <button type="submit" class="btn dark">отправить</button>
         </form>
       </div>
-      <div class="contact-us-block">
-        <h2 class="section-title">Контакты</h2>
+      <div class="contact-us-block ">
+        <i class="contact-us-block-bg"></i>
+        <h2 class="section-title text-white margin-b-xl">Контакты</h2>
         <address>
           <ul class="contacts-list">
             <li class="contacts-list-item address">
@@ -314,8 +315,10 @@
             </li>
           </ul>
         </address>
-        <p class="description">время работы</p>
-        <p>Ежедневно с 9:00 до 22:00</p>
+        <div class= " work-hours">
+        <p class="section-description  work-hours-title">время работы</p>
+        <p class="  work-hours-description">Ежедневно с 9:00 до 22:00</p>
+        </div>
       </div>
     </div>
   </div>
