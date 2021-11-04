@@ -338,3 +338,79 @@ button {
   height: 20px;
   fill: currentColor;
 }
+
+.booking-form-container {
+}
+
+.contact-us {
+  background-color: #191c26;
+}
+
+.masters-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.contact-us .container {
+  display: flex;
+  flex-direction: row;
+}
+.contact-us-block {
+  width: 50%;
+}
+
+.booking-form {
+  padding-right: 20px;
+}
+
+.booking-form-row {
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-form-control {
+  width: 50%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.booking-form-control::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--color-white);
+}
+
+.booking-form-control-wide {
+  width: 100%;
+}
+.booking-form-input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  margin-right: 30px;
+  height: 24px;
+
+  outline: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.booking-form-textarea {
+  resize: none;
+  height: 76px;
+}
+.booking-form-input:last-child {
+  margin-right: 0;
+}

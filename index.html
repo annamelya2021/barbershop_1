@@ -90,7 +90,7 @@
 
     <!-- услуги и цены -->
     <section class="services-and-prices section-padding">
-      <div class="container">
+      <div class="container section-padding">
         <p class="section-description text-light-grey">Проведи время в компании лучших мастеров </p>
         <h2 class="section-title text-white margin-b-xl">Услуги и цены</h2>
 
@@ -110,6 +110,7 @@
             </ul>
           </div>
         <button class="btn booking-online">онлайн-запись</button>
+
       </div>
     </section>
 
@@ -276,44 +277,60 @@
   </main>
 
   <!-- футер -->
-  <footer>
-    <div class="contact-us">
-      <div>
-        <h2 class="section-title">Онлайн-запись</h2>
+<footer>
+  <div class="contact-us section-padding">
+    <div class="container">
+      <div class="contact-us-block">
+        <h2 class="section-title text-white margin-b-xl">Онлайн-запись</h2>
+        <form class="booking-form">
+          <div class="booking-form-row">
+            <label class="booking-form-control" for="">
+            <input  class="booking-form-input" type="text" placeholder="Имя*" name="firstname" id="" required>
+            </label>
+            <label class="booking-form-control " for="">
+            <input class="booking-form-input"  type="tel" placeholder="Телефон*" name="telephone" id="" required>
+            </label>
+          </div>
+          <div class="booking-form-row">
+            <label class="booking-form-control booking-form-control-wide" for="">
+            <textarea  class="booking-form-input booking-form-textarea" name="message" placeholder="Сообщение"></textarea>
+          </label>
+          </div>
+          <button type="submit" class="btn dark">отправить</button>
+        </form>
       </div>
-      <div>
-        <h2 class="section-title">контакты</h2>
+      <div class="contact-us-block">
+        <h2 class="section-title">Контакты</h2>
         <address>
           <ul class="contacts-list">
-            <li class="contacts-item address">
-                Киев, 08132
+            <li class="contacts-list-item address">
+              ул. Васильковая, 7А Киев, 08132
             </li>
-            <li class="contacts-item phone">
-              <a href="tel:+38 044 111 11 11" class="contacts-link">
-                +38 044 111 11 11
-              </a>
+            <li class="contacts-list-item phone">
+              <a href="tel:+380441111111" class="contacts-list-link">+38 044 111 11 11</a>
             </li>
-            <li class="contacts-item mail">
-              <a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
+            <li class="contacts-list-item mail">
+              <a href="mailto:barbershop@email.com" class="contacts-list-link">barbershop@email.com</a>
             </li>
           </ul>
         </address>
-        <p class="section-description">время работы</p>
+        <p class="description">время работы</p>
         <p>Ежедневно с 9:00 до 22:00</p>
       </div>
     </div>
-    <div class="copyright">
-      <p class="copyright-text">&#169 Copyright 2021</p>
-      <ul class="social-links">
-        <li class="social-item">
-          <a href="#" class="social-link" lang="en">Instagram</a>
-        </li>
-        <li class="social-item">
-          <a href="#" class="social-link" lang="en">YouTube</a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+  </div>
+  <div class="copyright">
+    <p class="copyright-text">&#169 Copyright 2021</p>
+    <ul class="social-links">
+      <li class="social-item">
+        <a href="#" class="social-link" lang="en">Instagram</a>
+      </li>
+      <li class="social-item">
+        <a href="#" class="social-link" lang="en">Youtube</a>
+      </li>
+    </ul>
+  </div>
+</footer>
 </body>
 
 </html>
